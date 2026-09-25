@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="243.77952755905514" height="175.74803149606302" preserveAspectRatio="xMinYMin meet" viewBox="0 0 243 175" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="243.77952755905514" height="175.74803149606302"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-175)" style="clip-path: url(#clip)">
+		<g transform="">
+			<g transform="">
+				<path d="M 34,16 L 34,171.748031 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 72.355906,16 L 72.355906,171.748031 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 110.711811,16 L 110.711811,171.748031 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 149.067717,16 L 149.067717,171.748031 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 187.423622,16 L 187.423622,171.748031 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 225.779528,16 L 225.779528,171.748031 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,16 L 225.779528,16 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,59.03302 L 225.779528,59.03302 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,102.06604 L 225.779528,102.06604 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,145.099059 L 225.779528,145.099059 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<g transform="">
+					<rect x="41.89680407596109" y="16.0" width="11.281148679944422" height="51.5878120010329" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="80.25270958777213" y="16.0" width="11.281148679944422" height="55.27393441083781" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="118.60861509958316" y="16.0" width="11.281148679944422" height="40.5344366019147" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="156.96452061139416" y="16.0" width="11.281148679944408" height="46.78773684075275" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="195.3204261232052" y="16.0" width="11.281148679944408" height="32.078792475885784" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="53.177952755905515" y="16.0" width="11.281148679944415" height="88.19144044257473" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="91.53385826771654" y="16.0" width="11.281148679944422" height="55.98922926591004" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="129.88976377952758" y="16.0" width="11.281148679944408" height="129.65556240419227" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="168.2456692913386" y="16.0" width="11.281148679944437" height="155.74803149606302" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="206.60157480314965" y="16.0" width="11.281148679944437" height="74.05208112774604" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 34,16 L 225.779528,16 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 34,16 L 34,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 72.355906,16 L 72.355906,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 110.711811,16 L 110.711811,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 149.067717,16 L 149.067717,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 187.423622,16 L 187.423622,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 225.779528,16 L 225.779528,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,53.177953,11)">
+							<text x="-28.2110595703125" y="-7.5" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">Shanghai Pharma</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,91.533858,11)">
+							<text x="-14.3572998046875" y="-7.5" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">Jointown</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,129.889764,11)">
+							<text x="-7.2344970703125" y="-7.5" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">CQP</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,168.245669,11)">
+							<text x="-25.9844970703125" y="-7.5" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">Liuzhou Pharma</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,206.601575,11)">
+							<text x="-41.00830078125" y="-7.5" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">China National Medicines</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 34,16 L 34,171.748031 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 34,16 L 29,16 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,59.03302 L 29,59.03302 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,102.06604 L 29,102.06604 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,145.099059 L 29,145.099059 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,29,16)">
+							<text x="-3.951416015625" y="-3.0" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,59.03302)">
+							<text x="-7.90283203125" y="-3.0" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">50</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,102.06604)">
+							<text x="-11.854248046875" y="-3.0" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">100</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,145.099059)">
+							<text x="-11.854248046875" y="-3.0" style="font-family: Deng; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">150</text>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

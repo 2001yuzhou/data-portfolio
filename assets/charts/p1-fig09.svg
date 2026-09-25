@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg class="chart-svg"   preserveAspectRatio="xMinYMin meet" viewBox="0 0 243 158" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="243.77952755905514" height="158.74015748031496"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-158)" style="clip-path: url(#clip)">
+		<g transform="">
+			<g transform="">
+				<path d="M 34,16 L 34,154.740157 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 72.355906,16 L 72.355906,154.740157 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 110.711811,16 L 110.711811,154.740157 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 149.067717,16 L 149.067717,154.740157 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 187.423622,16 L 187.423622,154.740157 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 225.779528,16 L 225.779528,154.740157 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,16 L 225.779528,16 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,40.863828 L 225.779528,40.863828 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,65.727655 L 225.779528,65.727655 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,90.591483 L 225.779528,90.591483 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,115.45531 L 225.779528,115.45531 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 34,140.319138 L 225.779528,140.319138 Z" style="stroke: rgb(90%,93%,96%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<g transform="">
+					<rect x="41.89680407596109" y="-161.52772838878997" width="11.281148679944422" height="177.52772838878997" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="80.25270958777213" y="-43.17590946293006" width="11.281148679944422" height="59.17590946293006" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="118.60861509958316" y="-91.90901137357834" width="11.281148679944422" height="107.90901137357834" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="156.96452061139416" y="-53.618717015211786" width="11.281148679944408" height="69.61871701521179" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="195.3204261232052" y="-43.175909462929994" width="11.281148679944408" height="59.175909462929994" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,30%,47%); fill-rule: evenodd;"/>
+					<rect x="53.177952755905515" y="16.0" width="11.281148679944415" height="138.74015748031496" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="91.53385826771654" y="16.0" width="11.281148679944422" height="21.382891654672214" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="129.88976377952758" y="16.0" width="11.281148679944408" height="46.74399571021366" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="168.2456692913386" y="16.0" width="11.281148679944437" height="9.448254452064486" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<rect x="206.60157480314965" y="16.0" width="11.281148679944437" height="60.66773911325602" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: rgb(18%,45%,71%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 34,16 L 225.779528,16 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 34,16 L 34,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 72.355906,16 L 72.355906,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 110.711811,16 L 110.711811,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 149.067717,16 L 149.067717,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 187.423622,16 L 187.423622,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 225.779528,16 L 225.779528,11 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,53.177953,11)">
+							<text x="-15.0" y="-7.5" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">上海医药</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,91.533858,11)">
+							<text x="-11.25" y="-7.5" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">九州通</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,129.889764,11)">
+							<text x="-15.0" y="-7.5" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">重药控股</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,168.245669,11)">
+							<text x="-15.0" y="-7.5" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">柳药集团</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,206.601575,11)">
+							<text x="-15.0" y="-7.5" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-15) scale(1,-1)">国药股份</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 34,16 L 34,154.740157 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 34,16 L 29,16 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,40.863828 L 29,40.863828 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,65.727655 L 29,65.727655 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,90.591483 L 29,90.591483 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,115.45531 L 29,115.45531 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 34,140.319138 L 29,140.319138 Z" style="stroke: rgb(78%,83%,87%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,29,16)">
+							<text x="-3.951416015625" y="-3.0" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,40.863828)">
+							<text x="-9.547119140625" y="-3.0" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">0.5</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,65.727655)">
+							<text x="-3.951416015625" y="-3.0" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">1</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,90.591483)">
+							<text x="-9.547119140625" y="-3.0" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">1.5</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,115.45531)">
+							<text x="-3.951416015625" y="-3.0" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">2</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,29,140.319138)">
+							<text x="-9.547119140625" y="-3.0" style="font-family: 'Microsoft YaHei','PingFang SC','Hiragino Sans GB','Source Han Sans SC',sans-serif; font-size: 7.5px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-6) scale(1,-1)">2.5</text>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
