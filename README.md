@@ -1,8 +1,8 @@
-# 个人数据分析作品集 · 中英双语「翻页式」网站
+# 个人数据分析作品集 · 中英双语网站
 
-**整页翻页式**（不是长滚动页）：每一屏固定为视口大小（100vw × 100vh），内容不会溢出，靠翻页切换；项目在列表页点击后进入独立详情页。
+**暗色 + 荧光绿**的单页滚动式作品集：DIN 风格压缩标题、编号卡片、横向图表画廊、滚动渐显与光标跟随。
 
-纯静态，零外部依赖（不挂 CDN、不需要构建工具）。双击 `index.html` 即可预览，也可直接部署到 GitHub Pages / Vercel / Netlify。
+纯静态，零外部依赖（字体已内嵌），双击 `index.html` 即可预览，也可直接部署到 GitHub Pages / Vercel / Netlify。
 
 ## 语言版本
 
@@ -11,88 +11,89 @@
 | `index.html` | 中文（lang="zh-CN"） |
 | `en.html` | 英文（lang="en"） |
 
-导航栏右上角切换（中文页显示 `EN`，英文页显示 `中文`），两页通过 `<link rel="alternate" hreflang>` 互相声明。
+导航右上角切换（中文页 `EN` / 英文页 `中文`），两页通过 `<link rel="alternate" hreflang>` 互相声明。
 
-## 页面结构（共 11 屏）
+## 设计系统
 
-```
-① cover        封面：姓名 / 定位 / 标签 / 联系方式
-② skills       技能与数据概览：4 个 KPI + 4 组技能
-③ projects     项目列表：2 张可点击卡片  ← 点卡片进入项目
-④ p1           项目一 概览：背景 + 我的工作 + 主图 + 下载
-⑤ p1-findings  项目一 关键发现（4 条）+ 主图
-⑥ p1-charts    项目一 图表画廊（10 张，点击放大）
-⑦ p2           项目二 概览：背景 + 我的工作 + 主图 + 下载
-⑧ p2-findings  项目二 关键发现（5 条）+ 主图
-⑨ p2-charts    项目二 图表画廊（6 张，点击放大）
-⑩ more         其他经历（临床数据治理 / 疾病风险预测 / 队列分析 / 血管研发）
-⑪ contact      联系方式 + 简历下载 + 数据来源
-```
-
-## 交互方式
-
-| 操作 | 效果 |
+| 元素 | 规格 |
 |---|---|
-| 底部 `‹` `›` 按钮 | 上一屏 / 下一屏 |
-| 键盘 `←` `→`、`PageUp/PageDown`、空格 | 翻页 |
-| 键盘 `Home` / `End` | 跳到首 / 末屏 |
-| 底部圆点 | 直接跳到某一屏 |
-| 顶部导航链接 | 跳到 封面 / 技能 / 项目 / 经历 / 联系 |
-| **点击项目卡片** | 进入该项目概览页 |
-| 项目页「返回项目列表」 | 回到 projects |
-| 点击任意图表 | 灯箱放大（`Esc` 或点击关闭） |
-| 地址栏 hash | 每屏有独立 `#id`，可直接分享某一屏链接 |
+| 背景 / 文字 | `#000000` / `#f6f8f6` |
+| 点缀色 | `#c9ff1a`（荧光绿，用于眉标、编号、箭头、链接悬停） |
+| 显示字体 | **Barlow Condensed**（内嵌 woff2，OFL 协议，DIN 风格压缩体） |
+| 中文正文字体 | PingFang SC / Microsoft YaHei / Noto Sans CJK SC |
+| 大标题 | `clamp(64px, 17.5vw, 250px)`，字重 700，大写 |
+| 区块标题 | `clamp(34px, 6.4vw, 72px)`，后接荧光绿 `↘` |
+| 眉标 | 10px / 700 / 字间距 2.4px / 大写 / 荧光绿 |
+| 卡片 | 直角（radius 0），1px 半透明描边，悬停出现荧光绿底线 |
+| 网格间距 | `clamp()` 视口自适应 |
+
+## 页面结构
+
+```
+#home        首屏：眉标 + 超大字姓名 + 定位 + 联系方式 + 横向图表缩略条 + 滚动提示
+.stats       数据条：项目数 / 数据记录 / SQL 查询类数 / 图表数（滚动到视野时数字动画）
+#experience  个人经历：ABOUT ME 自我介绍 + 关键数据 + CAREER PATH 时间轴
+#works       个人作品：两张大编号卡片（01 / 02），点击跳到项目详情
+#p1 / #p2    项目详情：我做了什么 / 关键发现（双栏）+ 横向图表画廊（可拖拽，点击放大）+ 下载
+#strengths   个人优势：4 组能力，编号 01–04
+#contact     联系方式：超大 LET'S TALK + 联系卡片
+footer       数据来源 + 回到顶部
+```
+
+## 交互
+
+- **光标跟随光晕**：荧光绿径向渐变随鼠标移动
+- **滚动渐显**：IntersectionObserver，元素进入视野时上移淡入（交错延迟）
+- **导航**：固定顶部、平滑滚动、滚动侦测高亮当前区块
+- **数字动画**：数据条数字滚动到视野时从 0 递增
+- **横向画廊**：鼠标拖拽滚动 + 滚轮纵向转横向
+- **灯箱**：点击图表放大，`Esc` 关闭
+- **移动端**：菜单折叠为 MENU 按钮；窄屏单列排版
+- **无障碍**：支持 `prefers-reduced-motion`，关闭动效与光晕
 
 ## 文件结构
 
 ```
 site/
-├── index.html                  # 中文版（翻页式）
-├── en.html                     # 英文版（翻页式）
+├── index.html                  # 中文版
+├── en.html                     # 英文版
 ├── README.md
 └── assets/
-    ├── style.css               # 整屏布局 + 翻页动效 + 响应式
-    ├── 周玉_数据分析_简历.pdf
+    ├── style.css               # 设计系统与全部样式
+    ├── favicon.svg             # 站点图标（柱状图造型）
+    ├── resume_yu_zhou.pdf      # 简历下载
+    ├── fonts/                  # Barlow Condensed（400/600/700）+ OFL 许可
     ├── charts/                 # 中文图表（16 张 SVG）
     │   ├── p1-fig01.svg … p1-fig10.svg
     │   ├── p2-fig01.svg … p2-fig06.svg
-    │   └── en/                 # 英文图表（16 张 SVG，公司名已英文化）
+    │   └── en/                 # 英文图表（16 张，公司名已英文化）
     └── data/                   # 可下载数据与脚本
-        ├── 项目一_清洗后数据.csv / 项目一_SQL分析.sql
-        ├── 项目二_清洗后数据.csv / 项目二_SQL分析.sql
-        └── 项目二_Tableau构建指南.md
 ```
 
 ## 本地预览与部署
 
 ```bash
 cd site
-python -m http.server 8000   # 浏览器打开 http://localhost:8000
+python -m http.server 8000   # 打开 http://localhost:8000
 ```
 
-部署到 GitHub Pages：把 `site` 下全部文件推到仓库根目录 → Settings → Pages → Source 选 `Deploy from a branch`（`main` / `root`）→ 访问 `https://<用户名>.github.io/<仓库>/`（英文版加 `en.html`）。仓库需为 Public，简历与数据文件都会公开。
+GitHub Pages：把 `site` 下全部文件推到仓库根目录 → Settings → Pages → Source `Deploy from a branch`（`main` / root）。
+线上地址：https://2001yuzhou.github.io/data-portfolio/ （英文版 `/en.html`）
 
 ## 如何修改
 
 | 要改什么 | 改哪里 | 执行 |
 |---|---|---|
-| 页面文案（中/英） | `scripts/build_site.py`（`C` 字典；`CH` 为图表标题） | `python scripts/build_site.py` |
-| 图表（中文） | `scripts/gen_charts.py` / `gen_retail_charts.py` | 对应脚本 |
-| 图表（英文） | `scripts/gen_charts_en.py`（含公司名中英对照） | 该脚本 |
-| 图表同步到站点 | `scripts/prep_site_assets.py` | 该脚本 |
-| 版式与配色 | `site/assets/style.css` | 直接改 |
-
-**新增一屏**：在 `build_site.py` 的 HTML 模板中加一个 `<section class="slide" id="新id">`，导航或卡片用 `data-go="新id"` 即可跳转——翻页脚本会自动把它纳入序列并生成圆点。
+| 页面文案与结构（中英） | `scripts/build_site.py` | `python scripts/build_site.py` |
+| 配色 / 字体 / 间距 | `site/assets/style.css` | 直接改 |
+| 图表（中文） | `scripts/gen_charts.py`、`gen_retail_charts.py` | 对应脚本 |
+| 图表（英文） | `scripts/gen_charts_en.py` | 该脚本 |
 
 ## 已验证项（无头 Chrome / Playwright 实测）
 
-- 中英两版各 **11 屏**，在 1440×900、1920×1080、1366×768 三种视口下**均无内容溢出、无文档滚动**
-- 每屏高度严格等于「视口高 − 顶栏」，符合整页固定尺寸要求
-- 翻页交互全部正常：下一屏 / 项目卡片跳转 / 返回 / 方向键 / 导航跳转 / 圆点跳转
-- 图表灯箱可正常打开与关闭；画廊中文 10 张、英文 10 张、项目二 6 张**全部加载成功**
-- 手机 390×844 下控制条居中不溢出（此前圆点被 `.ctrl button` 样式撑宽导致溢出，已修复）
-- 0 控制台报错、0 失败请求
-
-## 窄屏回退
-
-窄屏（≤900px）或矮屏（≤620px）时，单屏内容按单列排布；若仍放不下，该屏内允许纵向滚动，避免内容被裁切。
+- 中英两页各 7 大区块，16 张图表**全部加载**（英文页 16/16 引用英文图表）
+- 无 HTTP 404、无控制台报错、无横向溢出
+- 滚动渐显 47/47 全部激活；导航点击与滚动高亮正常
+- 画廊拖拽可横向滚动；灯箱打开/关闭正常
+- 移动端 390px：菜单折叠与展开正常、无横向溢出
+- Barlow Condensed 字体正确加载；背景 `#000`、点缀色 `#c9ff1a` 生效

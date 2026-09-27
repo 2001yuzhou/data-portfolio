@@ -4,281 +4,292 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Yu Zhou · Data Analysis Portfolio</title>
+<meta name="description" content="MSc in Clinical Medicine (Tianjin University), focused on business performance analysis and data governance in pharma. I work backwards from the busin">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="alternate" hreflang="zh-CN" href="index.html">
 <link rel="alternate" hreflang="en" href="en.html">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<nav class="nav"><div class="wrap">
-  <span class="nav-name">Yu Zhou · Data Analyst</span>
+<div id="glow"></div>
+
+<nav class="nav" id="nav">
+  <a class="brand" href="#home"><span class="dot"></span>YU ZHOU</a>
   <div class="nav-links">
-    <a data-go="cover">Cover</a>
-    <a data-go="skills">Skills</a>
-    <a data-go="projects">Projects</a>
-    <a data-go="more">Experience</a>
-    <a data-go="contact">Contact</a>
-    <a class="lang" href="index.html" title="切换到中文">中文</a>
+      <a href="#experience">Experience</a>
+      <a href="#works">Projects</a>
+      <a href="#strengths">Capabilities</a>
+      <a class="lang" href="index.html" title="切换到中文">中文</a>
   </div>
-</div></nav>
+  <button class="nav-toggle" id="navToggle" aria-label="menu">MENU</button>
+</nav>
 
-<main class="deck" id="deck">
-
-  <section class="slide active" id="cover"><div class="inner cover-inner">
-    <h1>Yu Zhou</h1>
-    <p class="role">Data Analyst · Pharmaceuticals & Healthcare</p>
-    <p class="lead">Master of Clinical Medicine (Tianjin University), focused on <b>business performance analysis</b> and <b>data governance</b> in pharma. I work backwards from the business question to metric definitions, extract and aggregate data with SQL, and deliver reports and dashboards that support decisions.</p>
-    <div class="tags">
-      <span class="tag">SQL (window functions / CTEs)</span>
-      <span class="tag">Python</span>
-      <span class="tag">R</span>
-      <span class="tag">Excel</span>
-      <span class="tag">Tableau</span>
-      <span class="tag">Data governance</span>
-      <span class="tag">KPI frameworks</span>
-      <span class="tag">Industry research</span>
-    </div>
-    <div class="meta">
+<main>
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <p class="eyebrow reveal">DATA ANALYSIS PORTFOLIO</p>
+    <h1 class="hero-title reveal d1">ZHOU YU</h1>
+    <p class="hero-role reveal d2">Data Analyst · Pharma &amp; Healthcare</p>
+    <p class="hero-desc reveal d3">MSc in Clinical Medicine (Tianjin University), focused on business performance analysis and data governance in pharma. I work backwards from the business question to metric definitions, extract and aggregate data with SQL, and deliver reports and dashboards that support decisions.</p>
+    <div class="hero-meta reveal d4">
       <span><b>Email</b> zhou1108y@163.com</span>
       <span><b>Phone</b> 188-5500-8745</span>
-      <span><b>Education</b> Tianjin University · MSc Clinical Medicine (2026)</span>
-      <span><b>Affiliation</b> Member, Communist Party of China</span>
+      <span><b>Education</b> Tianjin University · MSc Clinical Medicine</span>
+      <span><b>Affiliation</b> Member, CPC</span>
     </div>
-    <button class="cta" data-go="skills">View my work →</button>
-  </div></section>
+    <div class="hero-strip reveal d4">
+    <img src="assets/charts/en/p1-fig01.svg" alt="" loading="lazy">
+    <img src="assets/charts/en/p1-fig03.svg" alt="" loading="lazy">
+    <img src="assets/charts/en/p1-fig04.svg" alt="" loading="lazy">
+    <img src="assets/charts/en/p1-fig06.svg" alt="" loading="lazy">
+    <img src="assets/charts/en/p1-fig08.svg" alt="" loading="lazy">
+    <img src="assets/charts/en/p1-fig05.svg" alt="" loading="lazy">
+    <img src="assets/charts/en/p1-fig02.svg" alt="" loading="lazy">
+    </div>
+    <a class="scroll-cue" href="#experience">SCROLL <span class="arw">&#8600;</span></a>
+  </section>
 
-  <section class="slide" id="skills"><div class="inner">
-    <h2>Skills & at a glance</h2>
-    <p class="sub">Organised as: can handle the data → can get the metrics right → can explain the business</p>
-    <div class="kpis">
-      <div class="kpi"><div class="num">2<small></small></div><div class="lbl">End-to-end industry projects</div></div>
-      <div class="kpi"><div class="num">60<small></small></div><div class="lbl">Company-year records</div></div>
-      <div class="kpi"><div class="num">16<small></small></div><div class="lbl">SQL query types</div></div>
-      <div class="kpi"><div class="num">16<small></small></div><div class="lbl">Vector charts</div></div>
-    </div>
-    <div class="grid2">
-      <div class="card"><h4>Data Processing & Governance</h4><p>Data dictionary and metric definitions, multi-source integration, cleansing and validation, outlier and missing-value handling, cross-source reconciliation, audit trails.</p></div>
-      <div class="card"><h4>Tools & Languages</h4><p>SQL (joins, aggregation, window functions, CTEs), Python, R, Excel (pivot tables, functions, charts), Tableau, SPSS.</p></div>
-      <div class="card"><h4>Statistics & Modelling</h4><p>Descriptive statistics, hypothesis testing, logistic and Cox regression, survival analysis, risk stratification; machine learning (Lasso, XGBoost) and model evaluation (AUC, F1, Brier, C-index, NRI).</p></div>
-      <div class="card"><h4>Business Analysis</h4><p>KPI framework design, trend / structural / benchmarking / attribution analysis, industry research, report and dashboard delivery.</p></div>
-    </div>
-  </div></section>
+  <section class="stats">
+    <div class="cell reveal d1"><div class="num">2<small></small></div><div class="lbl">End-to-end industry projects</div></div>
+    <div class="cell reveal d2"><div class="num">60<small></small></div><div class="lbl">Company-year records</div></div>
+    <div class="cell reveal d3"><div class="num">16<small></small></div><div class="lbl">SQL query types</div></div>
+    <div class="cell reveal d4"><div class="num">16<small></small></div><div class="lbl">Vector charts</div></div>
+  </section>
 
-  <section class="slide" id="projects"><div class="inner">
-    <h2>Projects</h2>
-    <p class="sub">Click a card to open the project (use ← → or arrow keys to navigate)</p>
-    <div class="pcard-grid">
-      <article class="pcard" data-go="p1">
-        <div class="pcard-top"><h3>Business Performance Analysis & Benchmarking of Pharmaceutical Distributors</h3><span class="period">2026 · 5 A-share distributors · FY2020–FY2025</span></div>
-        <p class="desc">The industry has entered low growth — is that growth still profitable, and where do company differences come from?</p>
-        <ul class="clean">
-        <li>30 financial + 143 segment records; cross-source check traced one restatement (2.2% revenue gap)</li>
-        <li>Four-dimension metric framework; 8 SQL query types covering trend, structure, benchmarking and attribution</li>
-        <li>Correlation of 0.872 confirms that business mix sets the gross-margin ceiling</li>
-        </ul>
-        <div class="pcard-foot"><span class="tools">SQL · Excel · Python</span><span class="go">Open project →</span></div>
-      </article>
-      <article class="pcard" data-go="p2">
-        <div class="pcard-top"><h3>Expansion Quality & Working-Capital Efficiency of Pharmacy Chains</h3><span class="period">2026 · 5 A-share pharmacy chains · FY2020–FY2025</span></div>
-        <p class="desc">Chains expanded through M&A, accumulating goodwill and working-capital pressure — how good is that expansion?</p>
-        <ul class="clean">
-        <li>35 records including goodwill; all reconciled against a second data source</li>
-        <li>8 SQL query types plus four Tableau views forming an operations dashboard</li>
-        <li>4 of 5 chains grew revenue without profit; goodwill-to-equity up to 90.57%</li>
-        </ul>
-        <div class="pcard-foot"><span class="tools">SQL · Tableau</span><span class="go">Open project →</span></div>
-      </article>
+  <section class="section" id="experience">
+    <div class="section-head reveal">
+      <p class="eyebrow dim">Experience</p>
+      <h2 class="sec-title">EXPERIENCE &amp; EDUCATION <span class="arrow">&#8600;</span></h2>
+      <p class="sec-cjk">Education and research, laid out on a timeline</p>
     </div>
-  </div></section>
+    <div class="about-grid">
+      <div class="reveal d1">
+        <p class="eyebrow">ABOUT ME</p>
+        <h3 class="about-name">Hi, I am Yu Zhou</h3>
+        <p class="bio">I turn numbers scattered across annual reports, financial notes and industry publications into conclusions that support decisions. I have delivered two end-to-end industry analysis projects, plus multimodal clinical data governance and disease-risk modelling - the first trained business judgement, the second trained rigour with data.</p>
+      </div>
+      <div class="stat-grid reveal d2">
+        <div class="s"><div class="v">2</div><div class="k">industry projects</div></div>
+        <div class="s"><div class="v">143</div><div class="k">segment records</div></div>
+        <div class="s"><div class="v">30</div><div class="k">financial records</div></div>
+        <div class="s"><div class="v">1</div><div class="k">first-author SCI paper</div></div>
+      </div>
+    </div>
+    <div class="timeline">
+      <p class="eyebrow reveal">CAREER PATH</p>
+      <div class="tl">
+      <div class="tl-item reveal d1"><div class="tl-date">2023.09 — 2026.06</div><h4>Tianjin University · MSc Clinical Medicine</h4><p>Research focus: clinical research (data mining and statistical analysis) and bioinformatics (gut microbiome and metabolomics). One first-author SCI paper (CAS Tier 2) and four co-authored papers.</p><div class="tl-tags"><span>Data mining</span><span>Statistics</span><span>Bioinformatics</span></div></div>
+      <div class="tl-item reveal d2"><div class="tl-date">2025.04 — 2025.10</div><h4>Cohort Data Governance and Risk Warning Analysis</h4><p>Processed 1,688 multi-source records and built an analysis ledger; constructed an insulin-resistance metric and applied Cox regression and survival analysis for risk stratification; model C-index improved from 0.611 to 0.646 with an NRI of 18.4%.</p><div class="tl-tags"><span>Cox regression</span><span>Survival analysis</span><span>Risk stratification</span></div></div>
+      <div class="tl-item reveal d3"><div class="tl-date">2023.10 — 2024.02</div><h4>Disease Risk Prediction and Visualisation System</h4><p>Integrated 840 multi-source records; used Lasso-logistic regression for feature selection and compared four models; selected XGBoost (AUC 0.854) and built an online prediction system with R Shiny.</p><div class="tl-tags"><span>Lasso</span><span>XGBoost</span><span>R Shiny</span></div></div>
+      <div class="tl-item reveal d4"><div class="tl-date">2019.09 — 2023.06</div><h4>Tianjin Polytechnic University · BEng Biomedical Engineering</h4><p>Weighted average 87.15, class rank 6/90; awarded the Internet Plus competition second prize and academic scholarships.</p><div class="tl-tags"><span>Tissue engineering</span><span>AI</span></div></div>
+      <div class="tl-item reveal d1"><div class="tl-date">2021.05 — 2023.05</div><h4>Small-Diameter Vascular Graft Development (National project, team lead)</h4><p>Led a five-person team through project application, feasibility analysis and technical proposals; coordinated task allocation and R&D progress; wrote the closing report.</p><div class="tl-tags"><span>Project management</span><span>Teamwork</span></div></div>
+      </div>
+    </div>
+  </section>
 
-  <section class="slide" id="p1"><div class="inner">
-    <div class="crumb"><span class="badge">Project 1</span><button class="back" data-go="projects">← Back to projects</button></div>
-    <h2>Business Performance Analysis & Benchmarking of Pharmaceutical Distributors</h2>
-    <p class="period-line">2025–2026 · 5 A-share pharmaceutical distributors · FY2020–FY2025</p>
-    <p class="desc">Pharmaceutical distribution has entered a low-growth phase. The project answers two questions: is growth still profitable, and where do the differences between companies come from?</p>
-    <div class="two-col">
-      <ul class="clean">
-        <li><b>Data governance</b>Collected 30 financial and 143 segment records across 5 companies; built a data dictionary to align currency, units and the attributable-profit basis. Cross-source validation flagged one restatement (2.2% revenue gap); traced it to the annual report and applied the comparable basis with an audit trail.</li>
-        <li><b>Metric framework</b>Designed a four-dimension framework (growth, profitability, operating efficiency, business mix) and wrote 8 types of SQL analysis using window functions and CTEs.</li>
-        <li><b>Analysis</b>Covered trend, structural, peer-benchmarking and attribution analysis, benchmarked against Ministry of Commerce and National Bureau of Statistics industry data.</li>
-        <li><b>Delivery</b>7-page analysis report, Excel dashboard (8 native charts, 8 KPI cards) and a 2-page portfolio summary.</li>
-      </ul>
-      <figure class="hero-fig"><img src="assets/charts/en/p1-fig02.svg" alt="Sample vs industry growth (%)" loading="lazy"><figcaption>Sample vs industry growth (%)<span class="note">Outperformed the industry by 3.0–7.0pp</span></figcaption></figure>
+  <section class="section" id="works">
+    <div class="section-head reveal">
+      <p class="eyebrow dim">Projects</p>
+      <h2 class="sec-title">SELECTED PROJECTS <span class="arrow">&#8600;</span></h2>
+      <p class="sec-cjk">Open a card for data sources, methods and all charts</p>
     </div>
-    <div class="dl">
-        <a href="assets/data/p1_cleaned_data.csv" download>Cleaned dataset (CSV)</a>
-        <a href="assets/data/p1_sql_analysis.sql" download>SQL analysis script</a>
+    <div class="work-list">
+    <a class="work-card reveal d1" href="#p1">
+      <div><div class="wc-num">01</div></div>
+      <div>
+        <div class="wc-cat">PHARMA DISTRIBUTION · SQL / EXCEL / PYTHON</div>
+        <h3 class="wc-title">Business Performance Analysis &amp; Benchmarking of Pharmaceutical Distributors</h3>
+        <p class="wc-desc">Five A-share pharmaceutical distributors, FY2020-FY2025. Cross-source validation traced one restatement; a four-dimension metric framework and 8 SQL query types quantified that business mix sets the gross-margin ceiling, benchmarked against Ministry of Commerce and National Bureau of Statistics data.</p>
+        <div class="wc-tags"><span>30 financial records</span><span>143 segment records</span><span>r = 0.872</span><span>Beat industry by 3.0-7.0pp</span></div>
+      </div>
+      <div class="wc-go">OPEN <span class="arw">&#8599;</span></div>
+    </a>
+    <a class="work-card reveal d2" href="#p2">
+      <div><div class="wc-num">02</div></div>
+      <div>
+        <div class="wc-cat">PHARMACY CHAINS · SQL / TABLEAU</div>
+        <h3 class="wc-title">Expansion Quality &amp; Working-Capital Efficiency of Pharmacy Chains</h3>
+        <p class="wc-desc">Five A-share pharmacy chains, FY2020-FY2025. Using goodwill and working-capital data to quantify expansion quality: 4 of 5 chains grew revenue without profit, goodwill-to-equity reached 90.57%, working capital tied up for 99-196 days, and a composite risk score flagged impairment exposure.</p>
+        <div class="wc-tags"><span>35 records</span><span>Goodwill 90.57%</span><span>4/5 no profit growth</span><span>SQL + Tableau</span></div>
+      </div>
+      <div class="wc-go">OPEN <span class="arw">&#8599;</span></div>
+    </a>
     </div>
-  </div></section>
+  </section>
 
-  <section class="slide" id="p1-findings"><div class="inner">
-    <div class="crumb"><span class="badge">Project 1</span><button class="back" data-go="projects">← Back to projects</button></div>
-    <h2>Key findings · Business Performance Analysis & Benchmarking of Pharmaceutical Distributors</h2>
-    <div class="two-col">
-      <ul class="findings">
-        <li><b>Growth without profitability</b>: revenue rose from RMB 404.0bn to 600.8bn (CAGR 8.26%) while net profit CAGR was only 0.97% and gross margin fell 2.46pp.</li>
-        <li><b>Cost control was the only offset</b>: the operating expense ratio fell from 7.64% to 6.00%, so profit divergence came from the expense side, not revenue.</li>
-        <li><b>Business mix sets the gross-margin ceiling</b>: wholesale 5.8%–7.5% ＜ retail 13%–16% ＜ manufacturing 19%–57%; correlation with high-margin revenue share reached <b>0.872</b>.</li>
-        <li><b>Leaders kept outperforming</b>: sample growth exceeded the industry by 3.0–7.0 percentage points for four straight years; CR3 rose from 86.13% to 87.78%.</li>
-      </ul>
-      <figure class="hero-fig"><img src="assets/charts/en/p1-fig02.svg" alt="Sample vs industry growth (%)" loading="lazy"><figcaption>Sample vs industry growth (%)<span class="note">Outperformed the industry by 3.0–7.0pp</span></figcaption></figure>
+  <section id="p1" class="section project">
+    <p class="eyebrow reveal">PROJECT 01</p>
+    <h3 class="reveal">Business Performance Analysis &amp; Benchmarking of Pharmaceutical Distributors</h3>
+    <p class="proj-period reveal">2025 — 2026 · 5 A-share distributors · FY2020-FY2025</p>
+    <p class="bio reveal">Pharmaceutical distribution has entered a low-growth phase. The project answers two questions: is growth still profitable, and where do the differences between companies come from?</p>
+    <div class="proj-cols">
+      <div class="reveal d1"><h4>WHAT I DID</h4><ul>        <li><b>Data governance</b>: collected 30 financial and 143 segment records across 5 companies; built a data dictionary to align currency, units and the attributable-profit basis. Cross-source validation flagged one restatement (2.2% revenue gap); traced it to the annual report and applied the comparable basis with an audit trail.</li>
+        <li><b>Metric framework</b>: designed a four-dimension framework (growth, profitability, operating efficiency, business mix) and wrote 8 types of SQL analysis using window functions and CTEs.</li>
+        <li><b>Analysis</b>: covered trend, structural, peer-benchmarking and attribution analysis, benchmarked against Ministry of Commerce and National Bureau of Statistics industry data.</li>
+        <li><b>Delivery</b>: 7-page analysis report, Excel dashboard (8 native charts, 8 KPI cards) and a 2-page portfolio summary.</li></ul></div>
+      <div class="reveal d2"><h4>KEY FINDINGS</h4><ul>        <li class="finding"><b>Growth without profitability</b>: revenue rose from RMB 404.0bn to 600.8bn (CAGR 8.26%) while net profit CAGR was only 0.97% and gross margin fell 2.46pp.</li>
+        <li class="finding"><b>Cost control was the only offset</b>: the operating expense ratio fell from 7.64% to 6.00%, so profit divergence came from the expense side, not revenue.</li>
+        <li class="finding"><b>Business mix sets the gross-margin ceiling</b>: wholesale 5.8%-7.5% &lt; retail 13%-16% &lt; manufacturing 19%-57%; correlation with high-margin revenue share reached <b>0.872</b>.</li>
+        <li class="finding"><b>Leaders kept outperforming</b>: sample growth exceeded the industry by 3.0-7.0 percentage points for four straight years; CR3 rose from 86.13% to 87.78%.</li></ul></div>
     </div>
-  </div></section>
+    <p class="eyebrow reveal">CHARTS &nbsp;·&nbsp; click to enlarge</p>
+    <div class="gallery-wrap reveal"><div class="gallery">
+      <figure class="g-item"><img src="assets/charts/en/p1-fig01.svg" alt="Aggregate revenue (RMB bn)"><figcaption>Aggregate revenue (RMB bn)<span class="note">Five A-share distributors, FY2020–FY2025</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig02.svg" alt="Sample vs industry growth (%)"><figcaption>Sample vs industry growth (%)<span class="note">Outperformed the industry by 3.0–7.0pp</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig03.svg" alt="Gross / net margin & opex ratio (%)"><figcaption>Gross / net margin & opex ratio (%)<span class="note">Margin -2.46pp, opex ratio -1.64pp</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig04.svg" alt="Revenue share & CR3 (%)"><figcaption>Revenue share & CR3 (%)<span class="note">CR3 rose from 86.13% to 87.78%</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig05.svg" alt="Revenue trend by company"><figcaption>Revenue trend by company<span class="note">Scale divergence across distributors</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig06.svg" alt="FY2025 profitability benchmarking"><figcaption>FY2025 profitability benchmarking<span class="note">Gross margin, net margin and ROE</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig07.svg" alt="FY2025 operating efficiency (days)"><figcaption>FY2025 operating efficiency (days)<span class="note">Inventory and receivable days</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig08.svg" alt="FY2025 business mix (% of revenue)"><figcaption>FY2025 business mix (% of revenue)<span class="note">Manufacturing, retail, wholesale</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig09.svg" alt="Attribution of net margin change"><figcaption>Attribution of net margin change<span class="note">Decomposing margin and opex effects</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p1-fig10.svg" alt="High-margin share vs gross margin"><figcaption>High-margin share vs gross margin<span class="note">Scatter: r = 0.872 (n = 30)</span></figcaption></figure>
+    </div></div>
+    <div class="dl">      <a href="assets/data/p1_cleaned_data.csv" download>Dataset CSV</a>
+      <a href="assets/data/p1_sql_analysis.sql" download>SQL script</a></div>
+  </section>
 
-  <section class="slide" id="p1-charts"><div class="inner">
-    <div class="crumb"><span class="badge">Project 1</span><button class="back" data-go="projects">← Back to projects</button></div>
-    <h2>Charts (10 · vector graphics) — click any chart to enlarge</h2>
-    <div class="gallery g5">
-      <figure class="g-item"><img src="assets/charts/en/p1-fig01.svg" alt="Aggregate revenue (RMB bn)" loading="lazy"><span>Aggregate revenue (RMB bn)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig02.svg" alt="Sample vs industry growth (%)" loading="lazy"><span>Sample vs industry growth (%)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig03.svg" alt="Gross / net margin & opex ratio (%)" loading="lazy"><span>Gross / net margin & opex ratio (%)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig04.svg" alt="Revenue share & CR3 (%)" loading="lazy"><span>Revenue share & CR3 (%)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig05.svg" alt="Revenue trend by company" loading="lazy"><span>Revenue trend by company</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig06.svg" alt="FY2025 profitability benchmarking" loading="lazy"><span>FY2025 profitability benchmarking</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig07.svg" alt="FY2025 operating efficiency (days)" loading="lazy"><span>FY2025 operating efficiency (days)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig08.svg" alt="FY2025 business mix (% of revenue)" loading="lazy"><span>FY2025 business mix (% of revenue)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig09.svg" alt="Attribution of net margin change (pp)" loading="lazy"><span>Attribution of net margin change (pp)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p1-fig10.svg" alt="High-margin share vs gross margin" loading="lazy"><span>High-margin share vs gross margin</span></figure>
+  <section id="p2" class="section project">
+    <p class="eyebrow reveal">PROJECT 02</p>
+    <h3 class="reveal">Expansion Quality &amp; Working-Capital Efficiency of Pharmacy Chains</h3>
+    <p class="proj-period reveal">2025 — 2026 · 5 A-share pharmacy chains · FY2020-FY2025</p>
+    <p class="bio reveal">Pharmacy chains expanded rapidly through M&amp;A, accumulating goodwill and working-capital pressure. SQL builds the metrics, Tableau visualises them.</p>
+    <div class="proj-cols">
+      <div class="reveal d1"><h4>WHAT I DID</h4><ul>        <li><b>Data governance</b>: collected 35 financial records including goodwill; aligned units and definitions, then validated. All 35 records reconciled against a second data source with no discrepancies.</li>
+        <li><b>SQL analysis</b>: dimension + fact tables with a metric view; 8 query types using window functions (LAG, RANK, MAX OVER) and CTEs, covering growth quality, M&amp;A risk, working-capital efficiency and a composite risk score.</li>
+        <li><b>Tableau</b>: built four views - growth vs profitability divergence, goodwill risk, working-capital efficiency and expense structure - into an interactive dashboard.</li></ul></div>
+      <div class="reveal d2"><h4>KEY FINDINGS</h4><ul>        <li class="finding"><b>Expansion diverged from profitability</b>: 4 of 5 chains grew revenue without profit (Yixintang -19.75%, Jianzhijia -10.03%, Laobaixing -9.26%).</li>
+        <li class="finding"><b>Goodwill risk varied widely</b>: goodwill-to-equity ranged from 26.85% (Yixintang) to <b>90.57% (Jianzhijia)</b> and 85.89% (Laobaixing).</li>
+        <li class="finding"><b>Working capital was heavy</b>: inventory plus receivable days totalled 99-196 days in FY2025, highest at Jianzhijia (195.6 days).</li>
+        <li class="finding"><b>Yifeng Pharmacy was the only chain to grow both revenue and profit</b>: revenue CAGR 13.20%, net profit CAGR 16.92%, net margin 6.87%, ROE 15.01%.</li>
+        <li class="finding"><b>Growth decelerated sharply</b>: sample growth fell from 27.59% in 2022 to 0.23% in 2025.</li></ul></div>
     </div>
-  </div></section>
+    <p class="eyebrow reveal">CHARTS &nbsp;·&nbsp; click to enlarge</p>
+    <div class="gallery-wrap reveal"><div class="gallery">
+      <figure class="g-item"><img src="assets/charts/en/p2-fig01.svg" alt="Aggregate revenue (RMB bn)"><figcaption>Aggregate revenue (RMB bn)<span class="note">Five A-share pharmacy chains, FY2020–FY2025</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p2-fig02.svg" alt="Sample revenue growth (%)"><figcaption>Sample revenue growth (%)<span class="note">Industry growth fell from 27.59% to 0.23%</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p2-fig03.svg" alt="Revenue CAGR vs net profit CAGR"><figcaption>Revenue CAGR vs net profit CAGR<span class="note">4 of 5 chains grew revenue without profit</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p2-fig04.svg" alt="Goodwill to equity (%)"><figcaption>Goodwill to equity (%)<span class="note">Jianzhijia 90.6%, Laobaixing 85.9%</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p2-fig05.svg" alt="Working-capital days"><figcaption>Working-capital days<span class="note">Inventory plus receivable days</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p2-fig06.svg" alt="Gross margin / SG&A / net margin"><figcaption>Gross margin / SG&A / net margin<span class="note">~35% margin eroded by selling expenses</span></figcaption></figure>
+    </div></div>
+    <div class="dl">      <a href="assets/data/p2_cleaned_data.csv" download>Dataset CSV</a>
+      <a href="assets/data/p2_sql_analysis.sql" download>SQL script</a>
+      <a href="assets/data/p2_tableau_build_guide.md" download>Tableau guide</a></div>
+  </section>
 
-  <section class="slide" id="p2"><div class="inner">
-    <div class="crumb"><span class="badge">Project 2</span><button class="back" data-go="projects">← Back to projects</button></div>
-    <h2>Expansion Quality & Working-Capital Efficiency of Pharmacy Chains</h2>
-    <p class="period-line">2025–2026 · 5 A-share pharmacy chains · FY2020–FY2025</p>
-    <p class="desc">Pharmacy chains expanded rapidly through M&A, accumulating goodwill and working-capital pressure. SQL builds the metrics, Tableau visualises them.</p>
-    <div class="two-col">
-      <ul class="clean">
-        <li><b>Data governance</b>Collected 35 financial records including goodwill; aligned units and definitions, then validated. All 35 records reconciled against a second data source with no discrepancies.</li>
-        <li><b>SQL analysis</b>Dimension + fact tables with a metric view; 8 query types using window functions (LAG, RANK, MAX OVER) and CTEs, covering growth quality, M&A risk, working-capital efficiency and a composite risk score.</li>
-        <li><b>Tableau</b>Built four views — growth vs profitability divergence, goodwill risk, working-capital efficiency and expense structure — into an interactive dashboard.</li>
-      </ul>
-      <figure class="hero-fig"><img src="assets/charts/en/p2-fig03.svg" alt="Revenue CAGR vs net profit CAGR (%)" loading="lazy"><figcaption>Revenue CAGR vs net profit CAGR (%)<span class="note">4 of 5 chains grew revenue without profit</span></figcaption></figure>
+  <section class="section" id="strengths">
+    <div class="section-head reveal">
+      <p class="eyebrow dim">Capabilities</p>
+      <h2 class="sec-title">CAPABILITIES <span class="arrow">&#8600;</span></h2>
+      <p class="sec-cjk">Organised as: can handle the data - can get the metrics right - can explain the business</p>
     </div>
-    <div class="dl">
-        <a href="assets/data/p2_cleaned_data.csv" download>Cleaned dataset (CSV)</a>
-        <a href="assets/data/p2_sql_analysis.sql" download>SQL analysis script</a>
-        <a href="assets/data/p2_tableau_build_guide.md" download>Tableau build guide</a>
+    <div class="skill-list">
+    <div class="skill reveal d2"><div class="idx">01</div><div><h3>Data Processing &amp; Governance</h3><p class="dim" style="font-size:13.5px">Data dictionary and metric definitions, multi-source integration, cleansing and validation, outlier and missing-value handling, cross-source reconciliation, audit trails.</p><ul><li>Definitions</li><li>Reconciliation</li><li>Outlier handling</li></ul></div></div>
+    <div class="skill reveal d3"><div class="idx">02</div><div><h3>Tools &amp; Languages</h3><p class="dim" style="font-size:13.5px">SQL (joins, aggregation, window functions, CTEs), Python, R, Excel (pivot tables, functions, charts), Tableau, SPSS.</p><ul><li>SQL</li><li>Python</li><li>R</li><li>Excel</li><li>Tableau</li></ul></div></div>
+    <div class="skill reveal d4"><div class="idx">03</div><div><h3>Statistics &amp; Modelling</h3><p class="dim" style="font-size:13.5px">Descriptive statistics, hypothesis testing, logistic and Cox regression, survival analysis, risk stratification; machine learning (Lasso, XGBoost) and model evaluation (AUC, F1, Brier, C-index, NRI).</p><ul><li>Regression</li><li>Survival analysis</li><li>ML</li></ul></div></div>
+    <div class="skill reveal d1"><div class="idx">04</div><div><h3>Business Analysis</h3><p class="dim" style="font-size:13.5px">KPI framework design, trend / structural / benchmarking / attribution analysis, industry research, report and dashboard delivery.</p><ul><li>KPI design</li><li>Benchmarking</li><li>Reporting</li></ul></div></div>
     </div>
-  </div></section>
+  </section>
 
-  <section class="slide" id="p2-findings"><div class="inner">
-    <div class="crumb"><span class="badge">Project 2</span><button class="back" data-go="projects">← Back to projects</button></div>
-    <h2>Key findings · Expansion Quality & Working-Capital Efficiency of Pharmacy Chains</h2>
-    <div class="two-col">
-      <ul class="findings">
-        <li><b>Expansion diverged from profitability</b>: 4 of 5 chains grew revenue without profit (Yixintang −19.75%, Jianzhijia −10.03%, Laobaixing −9.26%).</li>
-        <li><b>Goodwill risk varied widely</b>: goodwill-to-equity ranged from 26.85% (Yixintang) to <b>90.57% (Jianzhijia)</b> and 85.89% (Laobaixing).</li>
-        <li><b>Working capital was heavy</b>: inventory plus receivable days totalled 99–196 days in FY2025, highest at Jianzhijia (195.6 days).</li>
-        <li><b>Yifeng Pharmacy was the only chain to grow both revenue and profit</b>: revenue CAGR 13.20%, net profit CAGR 16.92%, net margin 6.87%, ROE 15.01%.</li>
-        <li><b>Growth decelerated sharply</b>: sample growth fell from 27.59% in 2022 to 0.23% in 2025.</li>
-      </ul>
-      <figure class="hero-fig"><img src="assets/charts/en/p2-fig03.svg" alt="Revenue CAGR vs net profit CAGR (%)" loading="lazy"><figcaption>Revenue CAGR vs net profit CAGR (%)<span class="note">4 of 5 chains grew revenue without profit</span></figcaption></figure>
+  <section class="section" id="contact">
+    <div class="section-head reveal">
+      <p class="eyebrow dim">Contact</p>
+      <h2 class="contact-title">LET'S TALK <span class="accent">&#8600;</span></h2>
+      <p class="sec-cjk">Happy to discuss data analysis roles and share the data-sourcing and governance details</p>
     </div>
-  </div></section>
-
-  <section class="slide" id="p2-charts"><div class="inner">
-    <div class="crumb"><span class="badge">Project 2</span><button class="back" data-go="projects">← Back to projects</button></div>
-    <h2>Charts (6 · vector graphics) — click any chart to enlarge</h2>
-    <div class="gallery g3">
-      <figure class="g-item"><img src="assets/charts/en/p2-fig01.svg" alt="Aggregate revenue (RMB bn)" loading="lazy"><span>Aggregate revenue (RMB bn)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p2-fig02.svg" alt="Sample revenue growth (%)" loading="lazy"><span>Sample revenue growth (%)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p2-fig03.svg" alt="Revenue CAGR vs net profit CAGR (%)" loading="lazy"><span>Revenue CAGR vs net profit CAGR (%)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p2-fig04.svg" alt="Goodwill to equity (%)" loading="lazy"><span>Goodwill to equity (%)</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p2-fig05.svg" alt="Working-capital days" loading="lazy"><span>Working-capital days</span></figure>
-      <figure class="g-item"><img src="assets/charts/en/p2-fig06.svg" alt="Gross margin / SG&A / net margin (%)" loading="lazy"><span>Gross margin / SG&A / net margin (%)</span></figure>
+    <div class="contact-grid">
+      <div class="c reveal d1"><div class="k">Email</div><div class="v"><a href="mailto:zhou1108y@163.com">zhou1108y@163.com</a></div></div>
+      <div class="c reveal d2"><div class="k">Phone</div><div class="v"><a href="tel:18855008745">188-5500-8745</a></div></div>
+      <div class="c reveal d3"><div class="k">Resume</div><div class="v"><a href="assets/resume_yu_zhou.pdf">Download PDF</a></div></div>
     </div>
-  </div></section>
-
-  <section class="slide" id="more"><div class="inner">
-    <h2>Other Experience</h2>
-    <p class="sub">Data governance and modelling in clinical settings, complementing the industry projects</p>
-    <div class="grid2">
-      <div class="card"><h4>Multimodal Clinical Data Governance</h4><p>Standardised collection definitions and field specifications across demographics, laboratory and imaging data; built a standardised, reusable database; collected 2,000+ patient records and maintained 1,500+ follow-up records.</p></div>
-      <div class="card"><h4>Disease Risk Prediction & Visualisation</h4><p>Integrated 840 multi-source records; used Lasso-logistic regression for feature selection and compared four models; selected XGBoost (AUC 0.854) and built an online prediction system with R Shiny.</p></div>
-      <div class="card"><h4>Cohort-Based Risk Warning Analysis</h4><p>Processed 1,688 multi-source records and built an analysis ledger; constructed an insulin-resistance metric and applied Cox regression and survival analysis for risk stratification; C-index improved from 0.611 to 0.646 with an NRI of 18.4%.</p></div>
-      <div class="card"><h4>Small-Diameter Vascular Graft Development (Project Lead)</h4><p>Led the research team through project application, feasibility analysis and technical proposals; coordinated task allocation and R&D progress; consolidated data and wrote the closing report.</p></div>
-    </div>
-  </div></section>
-
-  <section class="slide" id="contact"><div class="inner contact-inner">
-    <h2>Contact</h2>
-    <p class="sub">Happy to discuss data analysis roles and share the data-sourcing and governance details</p>
-    <p class="contact-line">Email: <a href="mailto:zhou1108y@163.com">zhou1108y@163.com</a>　|　Phone: 188-5500-8745</p>
-    <div class="dl dl-center"><a href="assets/resume_yu_zhou.pdf" download>Download resume (PDF)</a></div>
-    <p class="src">Sources: public annual reports (Sina Finance API, reconciled against Eastmoney), Eastmoney segment data, Ministry of Commerce Statistical Analysis Report on the Pharmaceutical Distribution Industry, National Bureau of Statistics. Industry data through FY2024.</p>
-  </div></section>
-
+  </section>
 </main>
 
-<div class="ctrl">
-  <button id="prev" aria-label="prev">‹</button>
-  <div class="dots" id="dots"></div>
-  <button id="next" aria-label="next">›</button>
-</div>
-<div class="progress"><div id="bar"></div></div>
+<footer>
+  <span>Sources: public annual reports (Sina Finance API, reconciled against Eastmoney), Eastmoney segment data, Ministry of Commerce Statistical Analysis Report on the Pharmaceutical Distribution Industry, National Bureau of Statistics. Industry data through FY2024.</span>
+  <a href="#home">Back to top &#8593;</a>
+</footer>
 
 <div id="lightbox"><img src="" alt=""><div class="cap"></div></div>
 
 <script>
 (function(){
-  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
-  var idx = 0, dots = document.getElementById('dots'), bar = document.getElementById('bar');
-  slides.forEach(function(s, i){
-    var b = document.createElement('button');
-    b.className = 'dot'; b.setAttribute('aria-label', s.id);
-    b.addEventListener('click', function(){ go(i); });
-    dots.appendChild(b);
+  var root = document.documentElement;
+
+  /* 光标跟随光晕 */
+  var glow = document.getElementById('glow');
+  window.addEventListener('pointermove', function(e){
+    glow.style.setProperty('--mx', e.clientX + 'px');
+    glow.style.setProperty('--my', e.clientY + 'px');
+  }, {passive:true});
+
+  /* 滚动渐显 */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {rootMargin:'0px 0px -12% 0px', threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* 首屏立即显现 */
+  window.addEventListener('load', function(){
+    document.querySelectorAll('.hero .reveal').forEach(function(el){ el.classList.add('in'); });
   });
-  var dotEls = Array.prototype.slice.call(dots.children);
-  function go(n){
-    n = Math.max(0, Math.min(slides.length - 1, n));
-    slides[idx].classList.remove('active');
-    idx = n;
-    slides[idx].classList.add('active');
-    dotEls.forEach(function(d, i){ d.classList.toggle('on', i === idx); });
-    bar.style.width = ((idx + 1) / slides.length * 100) + '%';
-    if (history.replaceState) history.replaceState(null, '', '#' + slides[idx].id);
+
+  /* 导航高亮（滚动侦测） */
+  var links = [].slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  var secs = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  function spy(){
+    var y = window.scrollY + window.innerHeight * 0.32, idx = -1;
+    secs.forEach(function(s, i){ if (s && s.offsetTop <= y) idx = i; });
+    links.forEach(function(a, i){ a.classList.toggle('on', i === idx); });
   }
-  document.getElementById('prev').addEventListener('click', function(){ go(idx - 1); });
-  document.getElementById('next').addEventListener('click', function(){ go(idx + 1); });
-  document.addEventListener('keydown', function(e){
-    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); go(idx + 1); }
-    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(idx - 1); }
-    if (e.key === 'Home') go(0);
-    if (e.key === 'End') go(slides.length - 1);
-    if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+  window.addEventListener('scroll', spy, {passive:true}); spy();
+
+  /* 移动端菜单 */
+  var nav = document.getElementById('nav');
+  document.getElementById('navToggle').addEventListener('click', function(){ nav.classList.toggle('open'); });
+  document.querySelectorAll('.nav-links a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+
+  /* 横向画廊：拖拽滚动 */
+  document.querySelectorAll('.gallery-wrap').forEach(function(w){
+    var down = false, startX = 0, startL = 0;
+    w.addEventListener('pointerdown', function(e){ down = true; startX = e.clientX; startL = w.scrollLeft; w.classList.add('dragging'); });
+    window.addEventListener('pointerup', function(){ down = false; w.classList.remove('dragging'); });
+    w.addEventListener('pointermove', function(e){ if (down) { w.scrollLeft = startL - (e.clientX - startX); } });
+    w.addEventListener('wheel', function(e){ if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) { w.scrollLeft += e.deltaY; e.preventDefault(); } }, {passive:false});
   });
-  document.querySelectorAll('[data-go]').forEach(function(el){
-    el.addEventListener('click', function(){
-      var id = el.getAttribute('data-go');
-      var k = slides.map(function(s){ return s.id; }).indexOf(id);
-      if (k >= 0) go(k);
-    });
-  });
-  var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('.cap');
-  document.querySelectorAll('.g-item img, .hero-fig img').forEach(function(img){
+
+  /* 灯箱 */
+  var lb = document.getElementById('lightbox'), li = lb.querySelector('img'), lc = lb.querySelector('.cap');
+  document.querySelectorAll('.g-item img').forEach(function(img){
     img.addEventListener('click', function(){
-      lbImg.src = img.src;
-      var cap = img.parentElement.querySelector('span, figcaption');
-      lbCap.textContent = cap ? cap.textContent : '';
+      li.src = img.src;
+      var f = img.parentElement.querySelector('figcaption');
+      lc.textContent = f ? f.textContent : '';
       lb.classList.add('open');
     });
   });
   lb.addEventListener('click', function(){ lb.classList.remove('open'); });
-  function fromHash(){ return slides.map(function(s){ return s.id; }).indexOf((location.hash || '').replace('#','')); }
-  // 支持深链：直接打开 #p2 / #contact 也能定位
-  var start = fromHash();
-  go(start > 0 ? start : 0);
-  // hash 变化时（含页面内切换、手工改地址栏、浏览器前进后退）同步翻页
-  window.addEventListener('hashchange', function(){
-    var k = fromHash();
-    if (k >= 0 && k !== idx) go(k);
-  });
-  window.addEventListener('popstate', function(){
-    var k = fromHash();
-    if (k >= 0 && k !== idx) go(k);
-  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('.stats .num');
+  var cio = new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var el = en.target, m = el.textContent.match(/^(\d+)(.*)$/);
+      if (!m) return;
+      var target = parseInt(m[1], 10), suf = m[2], t0 = performance.now();
+      (function tick(now){
+        var p = Math.min((now - t0) / 900, 1), v = Math.round(target * (1 - Math.pow(1 - p, 3)));
+        el.innerHTML = v + suf; if (p < 1) requestAnimationFrame(tick);
+      })(t0);
+      cio.unobserve(el);
+    });
+  }, {threshold:0.4});
+  counters.forEach(function(c){ cio.observe(c); });
+
+  /* Esc 关灯箱 */
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') lb.classList.remove('open'); });
 })();
 </script>
 </body>

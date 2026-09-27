@@ -1,0 +1,5 @@
+Barlow Condensed — SIL Open Font License 1.1
+Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow)
+Source: https://unpkg.com/@fontsource/barlow-condensed/
+Free for commercial use. The full license text is available at:
+https://scripts.sil.org/OFL
