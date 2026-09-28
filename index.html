@@ -50,10 +50,10 @@
   </section>
 
   <section class="stats">
-    <div class="cell reveal d1"><div class="num">2<small></small></div><div class="lbl">完整行业分析项目</div></div>
-    <div class="cell reveal d2"><div class="num">60<small>条</small></div><div class="lbl">公司-年度数据记录</div></div>
-    <div class="cell reveal d3"><div class="num">16<small>类</small></div><div class="lbl">SQL 分析查询</div></div>
-    <div class="cell reveal d4"><div class="num">16<small>张</small></div><div class="lbl">矢量分析图表</div></div>
+    <div class="cell reveal d1"><div class="num">3<small></small></div><div class="lbl">完整分析项目</div></div>
+    <div class="cell reveal d2"><div class="num">183,828<small>条</small></div><div class="lbl">京东行为事件</div></div>
+    <div class="cell reveal d3"><div class="num">24<small>类</small></div><div class="lbl">SQL分析查询</div></div>
+    <div class="cell reveal d4"><div class="num">25<small>张</small></div><div class="lbl">矢量分析图表</div></div>
   </section>
 
   <section class="section" id="experience">
@@ -66,12 +66,12 @@
       <div class="reveal d1">
         <p class="eyebrow">ABOUT ME</p>
         <h3 class="about-name">Hi, I am 周玉</h3>
-        <p class="bio">我用 SQL 和 Python 把散落在年报、财报附注和行业报告里的数字整理成可以判断业务的结论。做过两个完整的行业分析项目，也做过临床多模态数据治理与疾病风险预测建模——前者训练业务判断，后者训练数据严谨度。</p>
+        <p class="bio">我用 SQL 和 Python 把散落在年报、财报附注、用户行为和行业报告里的数字整理成可以判断业务的结论。做过三个完整分析项目，也做过临床多模态数据治理与疾病风险预测建模——前者训练业务判断，后者训练数据严谨度。</p>
       </div>
       <div class="stat-grid reveal d2">
-        <div class="s"><div class="v">2</div><div class="k">行业分析项目</div></div>
-        <div class="s"><div class="v">143</div><div class="k">条分部记录</div></div>
-        <div class="s"><div class="v">30</div><div class="k">条财务记录</div></div>
+        <div class="s"><div class="v">3</div><div class="k">完整分析项目</div></div>
+        <div class="s"><div class="v">183,828</div><div class="k">条行为事件</div></div>
+        <div class="s"><div class="v">24</div><div class="k">类SQL查询</div></div>
         <div class="s"><div class="v">1</div><div class="k">篇一作 SCI</div></div>
       </div>
     </div>
@@ -111,6 +111,16 @@
         <h3 class="wc-title">医药零售连锁扩张质量与资金效率分析</h3>
         <p class="wc-desc">5 家 A 股医药零售连锁 2020–2025 年。用含商誉的财务数据量化「扩张质量」：5 家中 4 家增收不增利，商誉占净资产最高达 90.57%，营运资金占用 99–196 天，综合风险评分定位并购减值风险。</p>
         <div class="wc-tags"><span>35 条记录</span><span>商誉占比 90.57%</span><span>4/5 增收不增利</span><span>SQL + Tableau</span></div>
+      </div>
+      <div class="wc-go">查看详情 <span class="arw">&#8599;</span></div>
+    </a>
+    <a class="work-card reveal d3" href="#p3">
+      <div><div class="wc-num">03</div></div>
+      <div>
+        <div class="wc-cat">E-COMMERCE CONSUMER · SQL / PYTHON</div>
+        <h3 class="wc-title">京东平台用户行为与运营策略分析</h3>
+        <p class="wc-desc">基于183,828条用户-商品行为事件，完成L1-L4分析：识别action_id非唯一、评分缺失哨兵等数据问题；用分群漏斗、会话路径、留存、RFM时间外验证、控制变量回归和HHI竞争结构定位运营机会，明确不虚构GMV。</p>
+        <div class="wc-tags"><span>183,828条事件</span><span>8类SQL查询</span><span>路径/留存/RFM</span><span>控制变量回归</span></div>
       </div>
       <div class="wc-go">查看详情 <span class="arw">&#8599;</span></div>
     </a>
@@ -178,6 +188,40 @@
       <a href="assets/data/p2_tableau_build_guide.md" download>Tableau 指南</a></div>
   </section>
 
+  <section id="p3" class="section project">
+    <p class="eyebrow reveal">项目 03</p>
+    <h3 class="reveal">京东平台用户行为与运营策略分析</h3>
+    <p class="proj-period reveal">2018-02-01 — 2018-04-15 · 183,828条行为事件 · 140,715名用户</p>
+    <p class="bio reveal">围绕“用户如何完成购买、哪类人群存在转化缺口、机会订单在哪里”展开。项目不满足于复现基础画像，而是先治理数据口径，再用路径、留存、RFM和回归做增量诊断。</p>
+    <div class="proj-cols">
+      <div class="reveal d1"><h4>我做了什么</h4><ul>        <li><b>L1 数据治理</b>：核验183,828×20字段，发现action_id不是唯一事件键、shop_score的0/-1为缺失哨兵、店铺注册日期按店铺整体缺失；建立业务键去重和保留异常标记规则。</li>
+        <li><b>L2 描述分析</b>：完成24小时行为节奏、年龄×性别×城市×会员等级画像、品牌/品类帕累托和用户行为集中度分析。</li>
+        <li><b>L3 诊断分析</b>：用8类SQL查询完成分群漏斗和基础聚合；用Python做30分钟会话还原、路径分析、D1-D30留存、RFM两阶段时间外验证、控制变量回归和品牌HHI/CR4。</li>
+        <li><b>L4 落地测算</b>：按用户量×转化缺口排序机会人群，输出目标压力测算和分群策略；因无成交金额字段，仅测算订单数，不编造GMV/ROI。</li></ul></div>
+      <div class="reveal d2"><h4>关键发现</h4><ul>        <li class="finding"><b>加购不是成交前置条件</b>：99.70%的购买用户没有加购行为，99.94%的订单会话为直接购买；传统“浏览→加购→下单”漏斗会误判流失。</li>
+        <li class="finding"><b>留存衰减快但累计回访存在</b>：D1精确回访1.70%，D30累计回访14.38%；低频行为不能只看精确日留存。</li>
+        <li class="finding"><b>RFM分层存在时间外增量</b>：高价值组第二阶段购买率0.492%，低价值组0.260%，为低价值组的1.89倍，卡方p=0.0019。</li>
+        <li class="finding"><b>评分负相关未能复现</b>：全部店铺相关系数0.121，有效评分样本0.004；控制浏览、加购、粉丝、会员和类目后标准化系数0.0411（p=3.17e-08），说明原负相关受口径与混杂影响。</li>
+        <li class="finding"><b>机会排序清晰但不可相加</b>：Phone和Electronics为高流量低转化品类，理论机会分别约205单、199单，仅用于排序与压力测试。</li></ul></div>
+    </div>
+    <p class="eyebrow reveal">分析图表 &nbsp;·&nbsp; 点击放大</p>
+    <div class="gallery-wrap reveal"><div class="gallery">
+      <figure class="g-item"><img src="assets/charts/p3-fig01.svg" alt="评分缺失哨兵分布"><figcaption>评分缺失哨兵分布<span class="note">0/-1不是真实评分，电子产品类目受影响最重</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig02.svg" alt="成交路径：加购不是必经环节"><figcaption>成交路径：加购不是必经环节<span class="note">直接购买用户占购买用户99.70%</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig03.svg" alt="24小时行为节奏"><figcaption>24小时行为节奏<span class="note">22:00活跃最高，10:00订单事件占比最高</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig04.svg" alt="主导品类转化差异"><figcaption>主导品类转化差异<span class="note">高流量品类存在显著转化缺口</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig05.svg" alt="多事件会话路径"><figcaption>多事件会话路径<span class="note">PageView→Order有120个会话，SavedCart→Order仅5个</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig06.svg" alt="D1-D30留存曲线"><figcaption>D1-D30留存曲线<span class="note">精确日回访衰减，D30累计回访14.38%</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig07.svg" alt="RFM时间外验证"><figcaption>RFM时间外验证<span class="note">高价值组购买率是低价值组的1.89倍</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig08.svg" alt="评分与订单量：口径敏感性"><figcaption>评分与订单量：口径敏感性<span class="note">原始负相关未复现，控制变量后为正且显著</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig09.svg" alt="L4转化机会测算"><figcaption>L4转化机会测算<span class="note">高流量低转化品类排在机会清单前列</span></figcaption></figure>
+    </div></div>
+    <div class="dl">      <a href="assets/data/p3_cleaned_events_sample.csv" download>数据样本 CSV</a>
+      <a href="assets/data/p3_sql_analysis.sql" download>SQL 脚本</a>
+      <a href="assets/data/p3_project_report.md" download>分析报告</a>
+      <a href="assets/data/p3_key_metrics.csv" download>关键指标 CSV</a></div>
+  </section>
+
   <section class="section" id="strengths">
     <div class="section-head reveal">
       <p class="eyebrow dim">个人优势</p>
@@ -207,7 +251,7 @@
 </main>
 
 <footer>
-  <span>数据来源：上市公司公开年报（新浪财经接口取数 + 东方财富交叉校验）、东方财富主营构成、商务部《药品流通行业运行统计分析报告》、国家统计局。行业数据截至 2024 年。</span>
+  <span>数据来源：上市公司公开年报与财报附注、东方财富主营构成、商务部《药品流通行业运行统计分析报告》、国家统计局；京东消费者行为数据来自和鲸社区公开数据集。</span>
   <a href="#home">回到顶部 &#8593;</a>
 </footer>
 

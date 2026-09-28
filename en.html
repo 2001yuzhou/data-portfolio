@@ -50,10 +50,10 @@
   </section>
 
   <section class="stats">
-    <div class="cell reveal d1"><div class="num">2<small></small></div><div class="lbl">End-to-end industry projects</div></div>
-    <div class="cell reveal d2"><div class="num">60<small></small></div><div class="lbl">Company-year records</div></div>
-    <div class="cell reveal d3"><div class="num">16<small></small></div><div class="lbl">SQL query types</div></div>
-    <div class="cell reveal d4"><div class="num">16<small></small></div><div class="lbl">Vector charts</div></div>
+    <div class="cell reveal d1"><div class="num">3<small></small></div><div class="lbl">End-to-end projects</div></div>
+    <div class="cell reveal d2"><div class="num">183,828<small></small></div><div class="lbl">JD behaviour events</div></div>
+    <div class="cell reveal d3"><div class="num">24<small></small></div><div class="lbl">SQL query types</div></div>
+    <div class="cell reveal d4"><div class="num">25<small></small></div><div class="lbl">Vector charts</div></div>
   </section>
 
   <section class="section" id="experience">
@@ -66,12 +66,12 @@
       <div class="reveal d1">
         <p class="eyebrow">ABOUT ME</p>
         <h3 class="about-name">Hi, I am Yu Zhou</h3>
-        <p class="bio">I turn numbers scattered across annual reports, financial notes and industry publications into conclusions that support decisions. I have delivered two end-to-end industry analysis projects, plus multimodal clinical data governance and disease-risk modelling - the first trained business judgement, the second trained rigour with data.</p>
+        <p class="bio">I turn numbers scattered across annual reports, financial notes, user behaviour and industry publications into conclusions that support decisions. I have delivered three end-to-end analysis projects, plus multimodal clinical data governance and disease-risk modelling.</p>
       </div>
       <div class="stat-grid reveal d2">
-        <div class="s"><div class="v">2</div><div class="k">industry projects</div></div>
-        <div class="s"><div class="v">143</div><div class="k">segment records</div></div>
-        <div class="s"><div class="v">30</div><div class="k">financial records</div></div>
+        <div class="s"><div class="v">3</div><div class="k">end-to-end projects</div></div>
+        <div class="s"><div class="v">183,828</div><div class="k">behaviour events</div></div>
+        <div class="s"><div class="v">24</div><div class="k">SQL query types</div></div>
         <div class="s"><div class="v">1</div><div class="k">first-author SCI paper</div></div>
       </div>
     </div>
@@ -111,6 +111,16 @@
         <h3 class="wc-title">Expansion Quality &amp; Working-Capital Efficiency of Pharmacy Chains</h3>
         <p class="wc-desc">Five A-share pharmacy chains, FY2020-FY2025. Using goodwill and working-capital data to quantify expansion quality: 4 of 5 chains grew revenue without profit, goodwill-to-equity reached 90.57%, working capital tied up for 99-196 days, and a composite risk score flagged impairment exposure.</p>
         <div class="wc-tags"><span>35 records</span><span>Goodwill 90.57%</span><span>4/5 no profit growth</span><span>SQL + Tableau</span></div>
+      </div>
+      <div class="wc-go">OPEN <span class="arw">&#8599;</span></div>
+    </a>
+    <a class="work-card reveal d3" href="#p3">
+      <div><div class="wc-num">03</div></div>
+      <div>
+        <div class="wc-cat">E-COMMERCE CONSUMER · SQL / PYTHON</div>
+        <h3 class="wc-title">JD Consumer Behaviour &amp; Operations Strategy Analysis</h3>
+        <p class="wc-desc">L1-L4 analysis of 183,828 user-product behaviour events: uncovered non-unique action IDs and rating sentinels; used segmented funnels, session paths, retention, out-of-time RFM, controlled regression and HHI competition structure to prioritise operational opportunities without inventing GMV.</p>
+        <div class="wc-tags"><span>183,828 events</span><span>8 SQL query types</span><span>Path / retention / RFM</span><span>Controlled regression</span></div>
       </div>
       <div class="wc-go">OPEN <span class="arw">&#8599;</span></div>
     </a>
@@ -178,6 +188,40 @@
       <a href="assets/data/p2_tableau_build_guide.md" download>Tableau guide</a></div>
   </section>
 
+  <section id="p3" class="section project">
+    <p class="eyebrow reveal">PROJECT 03</p>
+    <h3 class="reveal">JD Consumer Behaviour &amp; Operations Strategy Analysis</h3>
+    <p class="proj-period reveal">2018-02-01 — 2018-04-15 · 183,828 events · 140,715 users</p>
+    <p class="bio reveal">The project asks how users complete purchases, which segments show conversion gaps and where operational opportunities concentrate. It moves beyond a basic profile by governing the data first, then using paths, retention, RFM and regression for incremental diagnosis.</p>
+    <div class="proj-cols">
+      <div class="reveal d1"><h4>WHAT I DID</h4><ul>        <li><b>L1 data governance</b>: audited 183,828 rows x 20 fields; found that action_id is not a unique event key, 0/-1 in shop_score are missing sentinels, and shop registration dates are missing at shop level; applied a business-key duplicate rule and retained anomaly flags.</li>
+        <li><b>L2 descriptive analysis</b>: analysed hourly rhythm, age x gender x city x membership profiles, brand/category Pareto concentration and user-activity concentration.</li>
+        <li><b>L3 diagnostics</b>: used 8 SQL query classes for segmented funnels and aggregation; Python handled 30-minute sessionisation, path analysis, D1-D30 retention, out-of-time RFM validation, controlled regression and brand HHI/CR4.</li>
+        <li><b>L4 action sizing</b>: ranked opportunities by user volume x conversion gap and produced target stress tests and segment strategies; no GMV or ROI is invented without transaction value.</li></ul></div>
+      <div class="reveal d2"><h4>KEY FINDINGS</h4><ul>        <li class="finding"><b>Cart is not a mandatory purchase step</b>: 99.70% of order users never added to cart and 99.94% of order sessions were direct; a linear view-to-cart-to-order funnel would misstate drop-off.</li>
+        <li class="finding"><b>Retention decays quickly but cumulative return exists</b>: exact-day D1 was 1.70%, while cumulative D30 return was 14.38%; low-frequency behaviour needs both views.</li>
+        <li class="finding"><b>RFM adds out-of-time signal</b>: the high-value group's P2 purchase rate was 0.492% versus 0.260% for low value, a 1.89x lift with chi-square p=0.0019.</li>
+        <li class="finding"><b>The negative rating effect was not reproduced</b>: shop-level correlation was 0.121 on all shops and 0.004 on valid scores; after controls the standardized coefficient was 0.0411 (p=3.17e-08).</li>
+        <li class="finding"><b>Opportunities are ranked, not additive</b>: Phone and Electronics are high-traffic, low-conversion categories with theoretical opportunities of about 205 and 199 orders; these are prioritisation stress tests only.</li></ul></div>
+    </div>
+    <p class="eyebrow reveal">CHARTS &nbsp;·&nbsp; click to enlarge</p>
+    <div class="gallery-wrap reveal"><div class="gallery">
+      <figure class="g-item"><img src="assets/charts/en/p3-fig01.svg" alt="Missing-rating sentinels by shop category"><figcaption>Missing-rating sentinels by shop category<span class="note">0/-1 are sentinel values, not valid ratings</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig02.svg" alt="Order path: cart is not mandatory"><figcaption>Order path: cart is not mandatory<span class="note">99.70% of order users never added to cart</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig03.svg" alt="Hourly behaviour rhythm"><figcaption>Hourly behaviour rhythm<span class="note">Traffic peaks at 22:00; order mix peaks at 10:00</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig04.svg" alt="Conversion by dominant category"><figcaption>Conversion by dominant category<span class="note">Large conversion gaps exist across high-traffic categories</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig05.svg" alt="Multi-event session paths"><figcaption>Multi-event session paths<span class="note">120 PageView-to-Order sessions vs 5 cart-assisted</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig06.svg" alt="D1-D30 retention curve"><figcaption>D1-D30 retention curve<span class="note">Exact-day decay with 14.38% cumulative D30 return</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig07.svg" alt="RFM out-of-time validation"><figcaption>RFM out-of-time validation<span class="note">High-value group purchase rate is 1.89x low value</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig08.svg" alt="Rating sensitivity: raw vs controlled"><figcaption>Rating sensitivity: raw vs controlled<span class="note">Negative result not reproduced; controlled effect positive</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/en/p3-fig09.svg" alt="L4 conversion-opportunity sizing"><figcaption>L4 conversion-opportunity sizing<span class="note">High-traffic, low-conversion categories rank first</span></figcaption></figure>
+    </div></div>
+    <div class="dl">      <a href="assets/data/p3_cleaned_events_sample.csv" download>Dataset sample</a>
+      <a href="assets/data/p3_sql_analysis.sql" download>SQL script</a>
+      <a href="assets/data/p3_project_report.md" download>Analysis report</a>
+      <a href="assets/data/p3_key_metrics.csv" download>Key metrics CSV</a></div>
+  </section>
+
   <section class="section" id="strengths">
     <div class="section-head reveal">
       <p class="eyebrow dim">Capabilities</p>
@@ -207,7 +251,7 @@
 </main>
 
 <footer>
-  <span>Sources: public annual reports (Sina Finance API, reconciled against Eastmoney), Eastmoney segment data, Ministry of Commerce Statistical Analysis Report on the Pharmaceutical Distribution Industry, National Bureau of Statistics. Industry data through FY2024.</span>
+  <span>Sources: public annual reports and notes, Eastmoney segment data, Ministry of Commerce pharmaceutical distribution reports, National Bureau of Statistics, and the public JD consumer-behaviour dataset on Heywhale.</span>
   <a href="#home">Back to top &#8593;</a>
 </footer>
 
