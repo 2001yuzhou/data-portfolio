@@ -1,13 +1,15 @@
 ﻿metric,value,definition
-raw_rows,183828.0,原始记录
-clean_rows,183827.0,清洗后记录
-unique_users,140715.0,用户数
-window_days,74.0,观察天数
-invalid_score_rows,72879.0,评分缺失哨兵记录
-shop_date_missing_rows,71354.0,店铺注册日期缺失记录
-direct_order_share,0.996996,购买用户直接购买占比
-d1_exact_retention,0.016975929223875454,D1精确回访率
-d30_cumulative_return,0.14383025284002532,D30累计回访率
-rfm_high_p2_order_rate,0.004916548065726485,RFM高价值组第二阶段购买率
-rfm_low_p2_order_rate,0.002596978061891617,RFM低价值组第二阶段购买率
-score_controlled_beta,0.04112053902530369,控制变量后评分标准化系数
+events,183827.0,Behavior events
+users,140715.0,Unique users
+order_events,10698.0,Order events
+weighted_d1_retention,0.016975929223875454,Weighted D1 retention
+avg_daily_d1_retention,0.015255295727011738,Average daily D1 retention
+new_product_rate,0.039804731505820506,Order users buying a product launched within 30 days
+view_users,124433.0,Users with PageView
+order_users,10652.0,Users with Order
+order_view_size_ratio,0.0856043011098342,Order users / view users size ratio
+view_order_overlap_rate,0.008791879967532728,True view-and-order overlap conversion
+direct_purchase_share,0.9969958693203155,Order users without cart
+cart_order_users,32.0,Users with both SavedCart and Order
+score_traffic_corr,-0.011718190927059911,Rating-pageview correlation among valid-rating shops
+zero_order_shop_share,0.5925073940190602,Share of shops with zero orders

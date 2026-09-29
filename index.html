@@ -53,7 +53,7 @@
     <div class="cell reveal d1"><div class="num">3<small></small></div><div class="lbl">完整分析项目</div></div>
     <div class="cell reveal d2"><div class="num">183,828<small>条</small></div><div class="lbl">京东行为事件</div></div>
     <div class="cell reveal d3"><div class="num">24<small>类</small></div><div class="lbl">SQL分析查询</div></div>
-    <div class="cell reveal d4"><div class="num">25<small>张</small></div><div class="lbl">矢量分析图表</div></div>
+    <div class="cell reveal d4"><div class="num">26<small>张</small></div><div class="lbl">矢量分析图表</div></div>
   </section>
 
   <section class="section" id="experience">
@@ -111,16 +111,6 @@
         <h3 class="wc-title">医药零售连锁扩张质量与资金效率分析</h3>
         <p class="wc-desc">5 家 A 股医药零售连锁 2020–2025 年。用含商誉的财务数据量化「扩张质量」：5 家中 4 家增收不增利，商誉占净资产最高达 90.57%，营运资金占用 99–196 天，综合风险评分定位并购减值风险。</p>
         <div class="wc-tags"><span>35 条记录</span><span>商誉占比 90.57%</span><span>4/5 增收不增利</span><span>SQL + Tableau</span></div>
-      </div>
-      <div class="wc-go">查看详情 <span class="arw">&#8599;</span></div>
-    </a>
-    <a class="work-card reveal d3" href="#p3">
-      <div><div class="wc-num">03</div></div>
-      <div>
-        <div class="wc-cat">E-COMMERCE CONSUMER · SQL / PYTHON</div>
-        <h3 class="wc-title">京东平台用户行为与运营策略分析</h3>
-        <p class="wc-desc">基于183,828条用户-商品行为事件，完成L1-L4分析：识别action_id非唯一、评分缺失哨兵等数据问题；用分群漏斗、会话路径、留存、RFM时间外验证、控制变量回归和HHI竞争结构定位运营机会，明确不虚构GMV。</p>
-        <div class="wc-tags"><span>183,828条事件</span><span>8类SQL查询</span><span>路径/留存/RFM</span><span>控制变量回归</span></div>
       </div>
       <div class="wc-go">查看详情 <span class="arw">&#8599;</span></div>
     </a>
@@ -192,34 +182,38 @@
     <p class="eyebrow reveal">项目 03</p>
     <h3 class="reveal">京东平台用户行为与运营策略分析</h3>
     <p class="proj-period reveal">2018-02-01 — 2018-04-15 · 183,828条行为事件 · 140,715名用户</p>
-    <p class="bio reveal">围绕“用户如何完成购买、哪类人群存在转化缺口、机会订单在哪里”展开。项目不满足于复现基础画像，而是先治理数据口径，再用路径、留存、RFM和回归做增量诊断。</p>
+    <p class="bio reveal">参考业务分析Notebook的表达方式，围绕“用户是谁、偏好什么、是否忠诚、如何转化、店铺为何增长”五个问题展开。项目使用SQL完成取数和聚合，以业务结论和可视化看板为最终产出，不把统计方法本身当作项目重点。</p>
     <div class="proj-cols">
-      <div class="reveal d1"><h4>我做了什么</h4><ul>        <li><b>L1 数据治理</b>：核验183,828×20字段，发现action_id不是唯一事件键、shop_score的0/-1为缺失哨兵、店铺注册日期按店铺整体缺失；建立业务键去重和保留异常标记规则。</li>
-        <li><b>L2 描述分析</b>：完成24小时行为节奏、年龄×性别×城市×会员等级画像、品牌/品类帕累托和用户行为集中度分析。</li>
-        <li><b>L3 诊断分析</b>：用8类SQL查询完成分群漏斗和基础聚合；用Python做30分钟会话还原、路径分析、D1-D30留存、RFM两阶段时间外验证、控制变量回归和品牌HHI/CR4。</li>
-        <li><b>L4 落地测算</b>：按用户量×转化缺口排序机会人群，输出目标压力测算和分群策略；因无成交金额字段，仅测算订单数，不编造GMV/ROI。</li></ul></div>
-      <div class="reveal d2"><h4>关键发现</h4><ul>        <li class="finding"><b>加购不是成交前置条件</b>：99.70%的购买用户没有加购行为，99.94%的订单会话为直接购买；传统“浏览→加购→下单”漏斗会误判流失。</li>
-        <li class="finding"><b>留存衰减快但累计回访存在</b>：D1精确回访1.70%，D30累计回访14.38%；低频行为不能只看精确日留存。</li>
-        <li class="finding"><b>RFM分层存在时间外增量</b>：高价值组第二阶段购买率0.492%，低价值组0.260%，为低价值组的1.89倍，卡方p=0.0019。</li>
-        <li class="finding"><b>评分负相关未能复现</b>：全部店铺相关系数0.121，有效评分样本0.004；控制浏览、加购、粉丝、会员和类目后标准化系数0.0411（p=3.17e-08），说明原负相关受口径与混杂影响。</li>
-        <li class="finding"><b>机会排序清晰但不可相加</b>：Phone和Electronics为高流量低转化品类，理论机会分别约205单、199单，仅用于排序与压力测试。</li></ul></div>
+      <div class="reveal d1"><h4>我做了什么</h4><ul>        <li><b>数据准备</b>：核验183,828行×20字段，处理缺失、重复和时间逻辑；最终得到183,827条有效行为记录。年龄和城市少量缺失保留为未知，评分0/-1不参与评分分析。</li>
+        <li><b>用户画像与留存</b>：按性别、年龄、城市线级、会员等级分析用户结构；计算周浏览量、浏览深度和次日留存，识别用户粘性不足的问题。</li>
+        <li><b>商品与人群偏好</b>：分析品类、品牌浏览量与订单量，拆解不同年龄、性别群体的Top3购买品类，并计算上市30天内新品的购买用户占比。</li>
+        <li><b>RFM与行为漏斗</b>：用NTILE思路对R、F和购买广度代理M进行1-5分打分；分析浏览、加购、下单和互动路径，区分订单用户/浏览用户规模比与真实浏览下单交集。</li>
+        <li><b>店铺与看板</b>：分析新老店0单比例、店铺评分与浏览量、类目门店数与Top3集中度；输出四页业务看板和FineBI/Tableau搭建指南。</li></ul></div>
+      <div class="reveal d2"><h4>关键发现</h4><ul>        <li class="finding"><b>用户结构下沉且偏中老年</b>：男性用户占61.2%，46-55岁和56岁以上合计约76.3%，三四线城市占比较高。</li>
+        <li class="finding"><b>留存是首要短板</b>：加权次日留存仅1.70%，每日新增用户平均次日留存1.53%，浏览深度稳定在约1.09-1.12之间。</li>
+        <li class="finding"><b>商品偏好集中在成熟品类</b>：手机、外套、茶浏览量最高；仅3.98%的购买用户购买了上市30天内的新品。</li>
+        <li class="finding"><b>直接购买路径占绝对主导</b>：99.70%的订单用户没有加购行为；加购且下单用户仅32人，购物车更像收藏和比价工具。</li>
+        <li class="finding"><b>店铺评分不等于流量</b>：有效评分店铺评分与浏览量相关系数为-0.012；全部店铺0单占比59.25%，订单集中在少数头部门店。</li>
+        <li class="finding"><b>类目竞争分化</b>：户外运动和电子产品Top3门店订单占比更高，食品、美妆、服饰门店多且份额分散。</li></ul></div>
     </div>
     <p class="eyebrow reveal">分析图表 &nbsp;·&nbsp; 点击放大</p>
     <div class="gallery-wrap reveal"><div class="gallery">
-      <figure class="g-item"><img src="assets/charts/p3-fig01.svg" alt="评分缺失哨兵分布"><figcaption>评分缺失哨兵分布<span class="note">0/-1不是真实评分，电子产品类目受影响最重</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig02.svg" alt="成交路径：加购不是必经环节"><figcaption>成交路径：加购不是必经环节<span class="note">直接购买用户占购买用户99.70%</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig03.svg" alt="24小时行为节奏"><figcaption>24小时行为节奏<span class="note">22:00活跃最高，10:00订单事件占比最高</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig04.svg" alt="主导品类转化差异"><figcaption>主导品类转化差异<span class="note">高流量品类存在显著转化缺口</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig05.svg" alt="多事件会话路径"><figcaption>多事件会话路径<span class="note">PageView→Order有120个会话，SavedCart→Order仅5个</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig06.svg" alt="D1-D30留存曲线"><figcaption>D1-D30留存曲线<span class="note">精确日回访衰减，D30累计回访14.38%</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig07.svg" alt="RFM时间外验证"><figcaption>RFM时间外验证<span class="note">高价值组购买率是低价值组的1.89倍</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig08.svg" alt="评分与订单量：口径敏感性"><figcaption>评分与订单量：口径敏感性<span class="note">原始负相关未复现，控制变量后为正且显著</span></figcaption></figure>
-      <figure class="g-item"><img src="assets/charts/p3-fig09.svg" alt="L4转化机会测算"><figcaption>L4转化机会测算<span class="note">高流量低转化品类排在机会清单前列</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig01.svg" alt="项目总览：用户、订单、留存与新品"><figcaption>项目总览：用户、订单、留存与新品<span class="note">五个业务问题一页看懂</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig02.svg" alt="用户画像：男性、中老年、三线城市为主"><figcaption>用户画像：男性、中老年、三线城市为主<span class="note">140,715名去重用户</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig03.svg" alt="活跃度与留存：次日留存1.70%"><figcaption>活跃度与留存：次日留存1.70%<span class="note">2月上旬为活跃峰值，浏览深度稳定</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig04.svg" alt="商品偏好：手机、外套、茶"><figcaption>商品偏好：手机、外套、茶<span class="note">浏览热度高，茶是高意图小品类</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig05.svg" alt="核心人群偏好差异"><figcaption>核心人群偏好差异<span class="note">中年男性偏服饰与茶，女性偏美妆</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig06.svg" alt="新品接受度3.98%"><figcaption>新品接受度3.98%<span class="note">用户偏好成熟品牌和经典款</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig07.svg" alt="RFM用户分层"><figcaption>RFM用户分层<span class="note">重要价值与重要保持用户构成核心盘</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig08.svg" alt="行为漏斗：直接购买占99.70%"><figcaption>行为漏斗：直接购买占99.70%<span class="note">加购更像收藏和比价工具</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig09.svg" alt="店铺运营：评分不等于流量"><figcaption>店铺运营：评分不等于流量<span class="note">新老店0单比例仍需关注</span></figcaption></figure>
+      <figure class="g-item"><img src="assets/charts/p3-fig10.svg" alt="类目竞争：户外与电子头部集中"><figcaption>类目竞争：户外与电子头部集中<span class="note">Top3门店订单占比更高</span></figcaption></figure>
     </div></div>
-    <div class="dl">      <a href="assets/data/p3_cleaned_events_sample.csv" download>数据样本 CSV</a>
-      <a href="assets/data/p3_sql_analysis.sql" download>SQL 脚本</a>
-      <a href="assets/data/p3_project_report.md" download>分析报告</a>
-      <a href="assets/data/p3_key_metrics.csv" download>关键指标 CSV</a></div>
+    <div class="dl">      <a href="assets/data/p3_project_report.md" download>中文报告</a>
+      <a href="assets/data/p3_project_report_en.md" download>English report</a>
+      <a href="assets/data/p3_sql_analysis.sql" download>SQL脚本</a>
+      <a href="assets/data/p3_finebi_dashboard_guide.md" download>看板指南</a>
+      <a href="assets/data/p3_key_metrics.csv" download>关键指标CSV</a></div>
   </section>
 
   <section class="section" id="strengths">
